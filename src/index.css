@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #10b981;
+    --primary-container: #34d399;
+    --on-primary: #ffffff;
+    --on-primary-container: #064e3b;
+    --secondary: #0284c7;
+    --secondary-container: #38bdf8;
+    --on-secondary: #ffffff;
+    --on-secondary-container: #0c4a6e;
+    --surface: #f8fafc;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f1f5f9;
+    --surface-container: #e2e8f0;
+    --on-surface: #0f172a;
+    --on-surface-variant: #64748b;
+    --outline: #94a3b8;
+    --outline-variant: #e2e8f0;
+  }
+
+  body {
+    font-family: 'Be Vietnam Pro', 'Prompt', 'Sarabun', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.icon-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Circular Progress SVG Animation */
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.85s ease-in-out;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* Scan line effect for meal analysis */
+@keyframes scan {
+  0% { top: 0; opacity: 1; }
+  50% { top: 100%; opacity: 0.6; }
+  100% { top: 0; opacity: 1; }
+}
+
+.animate-scan {
+  animation: scan 2.5s ease-in-out infinite;
+}
+
+/* Hide scrollbars when desired */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

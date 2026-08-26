@@ -1,0 +1,6 @@
+{
+  "name": "Smart Food NCD",
+  "description": "แอปพลิเคชันวิเคราะห์โภชนาการและดูแลสุขภาพ NCD ด้วย AI - แนะนำแคลอรี่ วิเคราะห์ภาพอาหาร และติดตามผล 14 วัน",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
